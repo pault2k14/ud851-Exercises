@@ -17,13 +17,18 @@ package com.example.android.datafrominternet;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     // TODO (26) Create an EditText variable called mSearchBoxEditText
+    EditText nSearchBoxEditText;
 
     // TODO (27) Create a TextView variable called mUrlDisplayTextView
+    TextView nUrlDisplayTextView;
     // TODO (28) Create a TextView variable called mSearchResultsTextView
+    TextView nSearchResultsTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +36,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // TODO (29) Use findViewById to get a reference to mSearchBoxEditText
+        nSearchBoxEditText = (EditText) findViewById(R.id.et_search_bar);
 
         // TODO (30) Use findViewById to get a reference to mUrlDisplayTextView
+        nUrlDisplayTextView = (TextView) findViewById(R.id.tv_url_display);
         // TODO (31) Use findViewById to get a reference to mSearchResultsTextView
+        nSearchResultsTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
     }
 }
